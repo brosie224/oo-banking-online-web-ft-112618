@@ -2,7 +2,7 @@ class Transfer
 
   attr_accessor :amount
 
-def initialize(amount, b, c)
+def initialize(amount, sender, receiver)
   @amount = amount
 end
 
