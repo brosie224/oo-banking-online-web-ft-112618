@@ -30,7 +30,7 @@ def reverse_transfer
     @receiver.balance -= @amount
     @status = "reversed"
   else
-    "rejected"
+    @status = "rejected"
   end
 end
 
