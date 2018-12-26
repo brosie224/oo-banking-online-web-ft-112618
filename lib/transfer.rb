@@ -19,7 +19,7 @@ def execute_transaction
     @receiver.balance += @amount
     @status = "complete"
   else
-    "rejected"
+    puts "rejected"
   end
 end
 
