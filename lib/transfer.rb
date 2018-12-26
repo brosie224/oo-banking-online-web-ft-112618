@@ -15,7 +15,8 @@ end
 
 def execute_transaction
   if @sender.valid? == false
-    "Transaction rejected. Please check your account balance."
+    puts "Transaction rejected. Please check your account balance."
+    @status = "rejected"
   else
     if @status == "pending"
       @sender.balance -= @amount
